@@ -33,7 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     file_put_contents($answerJsonFile, json_encode($saveAry));
     $docString = '';
 
-
     $newAry = array();
     $docContent = '<html>
         <body onLoad="document.forms[\'document_download\'].submit();" style="display:none;">
@@ -41,8 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     foreach (json_decode($jsonContent) as $row) {
         $newAry[$row->id] = array();
-        // $newAry[$row->id]['question'] = $row->question;
-        // $newAry[$row->id]['name'] = $row->rename;
 
         if (isset($aAry[$row->id]) && $aAry[$row->id]) {
             $docContent .= '<input type="hidden" name="' . $row->name . '" value="' . $aAry[$row->id] . '" />';
@@ -53,39 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </html>';
     
     exit($docContent);
-
-    /*
-    $newAry = array();
-    foreach (json_decode($jsonContent) as $row) {
-        if ($row->pid == 0) {
-            $newAry[$row->id] = array();
-            $newAry[$row->id]['question'] = $row->question;
-        } else {
-            if (isset($aAry[$row->id]) && $aAry[$row->id]) {
-                $newAry[$row->pid][$row->id] = $aAry[$row->id];
-            }
-        }
-    }
-
-    if (sizeof($newAry)) {
-        foreach ($newAry as $docxRow) {
-            $docString .= '<hr/>';
-            foreach ($docxRow as $key => $docxData) {
-                $style = '';
-                $style1 = '';
-                if ($key != 'question') {
-                    $style = 'margin-left: 30px;';
-                } else {
-                    $style1 = 'font-weight: bold;';
-                }
-                $docString .= '<div style="font-family: Proxima Nova;' . $style . '">
-						<span style="' . $style1 . '">' . $docxData . '</span><br/><br/>';
-                $docString .= '</div>';
-            }
-        }
-    }
-    */
-    exit($docString);
 }
 if (sizeof(json_decode($jsonContent))) {
     $rowIndex = 0;
@@ -127,7 +91,6 @@ if (sizeof(json_decode($jsonContent))) {
             $json[$row->id]['subid'] = $row->subid;
         }
     }
-    // print_r($json);exit;
     $newJson = array();
     if (sizeof($json)) {
         foreach ($json as $parentRow) {
@@ -140,7 +103,6 @@ if (sizeof(json_decode($jsonContent))) {
                         foreach ($subRow['childRow'] as $childRow) {
                             $newChildRow[] = $childRow;
                         }
-                        // print_r($subRow);exit;
                         $newSubRow[] = array(
                             'childRow' => $newChildRow,
                             'sub_question' => $subRow['sub_question'],
@@ -154,7 +116,6 @@ if (sizeof(json_decode($jsonContent))) {
                         $newSubRow[] = $subRow;
                     }
                 }
-                // print_r($childRow);exit;
                 $newParentRow['subRow'] = $newSubRow;
                 $newParentRow['question'] = $parentRow['question'];
                 $newParentRow['type'] = $parentRow['type'];
@@ -168,7 +129,6 @@ if (sizeof(json_decode($jsonContent))) {
             $newJson[] = $newParentRow;
         }
     }
-    // print_r($newJson);exit;
 }
 
 ?>
@@ -296,8 +256,6 @@ if (sizeof(json_decode($jsonContent))) {
             var myWindow = window.open("", "ContentWindow");
             myWindow.document.write(data);
             myWindow.document.forms["document_download"].submit();
-            
-            // setTimeout(myWindow.close(), 500);
         }
 	</script>
 
