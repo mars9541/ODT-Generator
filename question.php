@@ -66,13 +66,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
             }
         }
-        // echo '<script type="text/javascript"> alert("Saved successfully."); </script>';
     }
     file_put_contents($jsonFile, json_encode($saveAry));
 }
 
 $jsonContent = file_get_contents($jsonFile);
-/* Select queries return a resultset */
 if (sizeof(json_decode($jsonContent))) {
     $json = array();
     $rowIndex = 0;
@@ -104,7 +102,6 @@ if (sizeof(json_decode($jsonContent))) {
             $json[$row->id]['name'] = $row->name;
         }
     }
-    // print_r($json);exit;
     $newJson = array();
     if (sizeof($json)) {
         foreach ($json as $parentRow) {
@@ -117,7 +114,6 @@ if (sizeof(json_decode($jsonContent))) {
                         foreach ($subRow['childRow'] as $childRow) {
                             $newChildRow[] = $childRow;
                         }
-                        // print_r($subRow);exit;
 						$newSubRow[] = array(
 							'childRow' => $newChildRow,
 							'sub_question' => $subRow['sub_question'],
