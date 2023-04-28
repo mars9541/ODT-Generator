@@ -206,7 +206,7 @@ function createFormField(item) {
 		csskey += "parent-" + item.id;
 	}
 	if (item.isleaf == 1) {
-		if (!item.childRow && item.type ==  'text') {			
+		if (!item.childRow && item.type == 'text') {
 			csskey += "subrow-" + item.pid;
 		} else {
 			csskey += " always-hide-item always-hide-" + item.pid;
@@ -240,7 +240,7 @@ function createFormField(item) {
 		}
 		if (item.type == 'checkbox') {
 			inputs = [];
-			Object.keys(options).forEach(function(key) {
+			Object.keys(options).forEach(function (key) {
 				inputs[inputs.length] = {
 					"id": key,
 					"label": options[key],
@@ -274,7 +274,7 @@ function createFormField(item) {
 		"noDuplicates": false,
 		"defaultValue": "",
 		"choices": choices,
-		"inputs": item.type == 'checkbox' ? inputs : null, 
+		"inputs": item.type == 'checkbox' ? inputs : null,
 		"conditionalLogic": "",
 		"productField": "",
 		"enablePasswordInput": "",
