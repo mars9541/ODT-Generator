@@ -5,7 +5,6 @@ function f_source($file) {
 	echo '<!DOCTYPE HTML><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>OpenTBS plug-in for TinyButStrong - demo source</title></head><body>'.highlight_file($file,true).'</body></html>';
 }
 
-
 // Retrieve the template to open
 $template = (isset($_POST['tpl'])) ? $_POST['tpl'] : '';
 
