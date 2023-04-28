@@ -1,1 +1,245 @@
-[{"id":1,"pid":0,"subid":0,"isleaf":0,"type":"text","name":"partnerCompanyName","question":"what is the Partner\u2019s Company Name?"},{"id":2,"pid":0,"subid":0,"isleaf":0,"type":"text","name":"partnerRegistrationNumber","question":"What is the Partner\u2019s registration number"},{"id":3,"pid":0,"subid":0,"isleaf":0,"type":"text","name":"partnerAddress","question":"What is the Partner\u2019s Address?"},{"id":4,"pid":0,"subid":0,"isleaf":0,"type":"text","name":"partnerURL","question":"What is the Partner\u2019s URL?"},{"id":5,"pid":0,"subid":0,"isleaf":0,"type":"text","name":"takeMonth","question":"How long?"},{"id":6,"pid":0,"subid":0,"isleaf":0,"type":"radio","name":null,"question":"Do we intend for this Partnership to be Exclusive?"},{"id":7,"pid":6,"subid":0,"isleaf":1,"type":"value","name":null,"question":"Yes"},{"id":8,"pid":6,"subid":0,"isleaf":1,"type":"value","name":null,"question":"No"},{"id":9,"pid":6,"subid":0,"isleaf":1,"type":"value","name":null,"question":"Partial"},{"id":10,"pid":0,"subid":0,"isleaf":0,"type":"radio","name":null,"question":"Has there been a change to the Commission Clause?"},{"id":11,"pid":10,"subid":0,"isleaf":1,"type":"text","name":null,"question":"Yes"},{"id":12,"pid":10,"subid":11,"isleaf":2,"type":"text","name":"commissionPercent","question":"Have we agreed to amend the Commission percentage (%)?"},{"id":13,"pid":10,"subid":11,"isleaf":2,"type":"text","name":"commissionStructure","question":"Have we agreed to amend the Commission structure?"},{"id":14,"pid":10,"subid":11,"isleaf":2,"type":"text","name":"commissionPayment","question":"Have the Partner requested a change to the Timing of Commission Payment?"},{"id":15,"pid":10,"subid":0,"isleaf":1,"type":"value","name":null,"question":"No"},{"id":16,"pid":0,"subid":0,"isleaf":0,"type":"select","name":"jurisdiction","question":"Have the Partner requested a change to the jurisdiction?"},{"id":17,"pid":16,"subid":0,"isleaf":1,"type":"value","name":null,"question":"NSW, Australia"},{"id":18,"pid":16,"subid":0,"isleaf":1,"type":"value","name":null,"question":"London, England"},{"id":19,"pid":0,"subid":0,"isleaf":0,"type":"radio","name":"terminationPeriod","question":"Have the Partner requested a change to the Termination Period?"},{"id":20,"pid":19,"subid":0,"isleaf":1,"type":"text","name":null,"question":"Yes"},{"id":21,"pid":19,"subid":0,"isleaf":1,"type":"value","name":null,"question":"No"},{"id":22,"pid":0,"subid":0,"isleaf":0,"type":"radio","name":"indemntiyClause","question":"Have the Partner requested a change to the indemnity clause?"},{"id":23,"pid":22,"subid":0,"isleaf":1,"type":"value","name":"","question":"Yes"},{"id":24,"pid":22,"subid":0,"isleaf":1,"type":"value","name":null,"question":"No"},{"id":25,"pid":0,"subid":0,"isleaf":0,"type":"text","name":null,"question":"Additional Points of Concern?"},{"id":26,"pid":0,"subid":0,"isleaf":0,"type":"text","name":"contactPhone","question":"Contact Phone number"},{"id":27,"pid":0,"subid":0,"isleaf":0,"type":"text","name":"contactEmail","question":"Contact Email"}]
+[
+    {
+        "id": 1,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "text",
+        "name": "partnerCompanyName",
+        "question": "what is the Partner\u2019s Company Name?"
+    },
+    {
+        "id": 2,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "text",
+        "name": "partnerRegistrationNumber",
+        "question": "What is the Partner\u2019s registration number"
+    },
+    {
+        "id": 3,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "text",
+        "name": "partnerAddress",
+        "question": "What is the Partner\u2019s Address?"
+    },
+    {
+        "id": 4,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "text",
+        "name": "partnerURL",
+        "question": "What is the Partner\u2019s URL?"
+    },
+    {
+        "id": 5,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "text",
+        "name": "takeMonth",
+        "question": "How long?"
+    },
+    {
+        "id": 6,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "radio",
+        "name": null,
+        "question": "Do we intend for this Partnership to be Exclusive?"
+    },
+    {
+        "id": 7,
+        "pid": 6,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "value",
+        "name": null,
+        "question": "Yes"
+    },
+    {
+        "id": 8,
+        "pid": 6,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "value",
+        "name": null,
+        "question": "No"
+    },
+    {
+        "id": 9,
+        "pid": 6,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "value",
+        "name": null,
+        "question": "Partial"
+    },
+    {
+        "id": 10,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "radio",
+        "name": null,
+        "question": "Has there been a change to the Commission Clause?"
+    },
+    {
+        "id": 11,
+        "pid": 10,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "text",
+        "name": null,
+        "question": "Yes"
+    },
+    {
+        "id": 12,
+        "pid": 10,
+        "subid": 11,
+        "isleaf": 2,
+        "type": "text",
+        "name": "commissionPercent",
+        "question": "Have we agreed to amend the Commission percentage (%)?"
+    },
+    {
+        "id": 13,
+        "pid": 10,
+        "subid": 11,
+        "isleaf": 2,
+        "type": "text",
+        "name": "commissionStructure",
+        "question": "Have we agreed to amend the Commission structure?"
+    },
+    {
+        "id": 14,
+        "pid": 10,
+        "subid": 11,
+        "isleaf": 2,
+        "type": "text",
+        "name": "commissionPayment",
+        "question": "Have the Partner requested a change to the Timing of Commission Payment?"
+    },
+    {
+        "id": 15,
+        "pid": 10,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "value",
+        "name": null,
+        "question": "No"
+    },
+    {
+        "id": 16,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "select",
+        "name": "jurisdiction",
+        "question": "Have the Partner requested a change to the jurisdiction?"
+    },
+    {
+        "id": 17,
+        "pid": 16,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "value",
+        "name": null,
+        "question": "NSW, Australia"
+    },
+    {
+        "id": 18,
+        "pid": 16,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "value",
+        "name": null,
+        "question": "London, England"
+    },
+    {
+        "id": 19,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "radio",
+        "name": "terminationPeriod",
+        "question": "Have the Partner requested a change to the Termination Period?"
+    },
+    {
+        "id": 20,
+        "pid": 19,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "text",
+        "name": null,
+        "question": "Yes"
+    },
+    {
+        "id": 21,
+        "pid": 19,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "value",
+        "name": null,
+        "question": "No"
+    },
+    {
+        "id": 22,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "radio",
+        "name": "indemntiyClause",
+        "question": "Have the Partner requested a change to the indemnity clause?"
+    },
+    {
+        "id": 23,
+        "pid": 22,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "value",
+        "name": "",
+        "question": "Yes"
+    },
+    {
+        "id": 24,
+        "pid": 22,
+        "subid": 0,
+        "isleaf": 1,
+        "type": "value",
+        "name": null,
+        "question": "No"
+    },
+    {
+        "id": 25,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "text",
+        "name": null,
+        "question": "Additional Points of Concern?"
+    },
+    {
+        "id": 26,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "text",
+        "name": "contactPhone",
+        "question": "Contact Phone number"
+    },
+    {
+        "id": 27,
+        "pid": 0,
+        "subid": 0,
+        "isleaf": 0,
+        "type": "text",
+        "name": "contactEmail",
+        "question": "Contact Email"
+    }
+]
